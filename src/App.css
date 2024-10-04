@@ -36,3 +36,68 @@
     transform: rotate(360deg);
   }
 }
+
+.product-card {
+  flex: 1 1 calc(33.333% - 16px);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+  box-sizing: border-box;
+}
+
+.product-card img {
+  height: 100px;
+  border-radius: 4px;
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-card button {
+  margin-top: auto;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;    /* Center items horizontally */
+  justify-content: space-between; /* Space items evenly */
+  border: 1px solid #ccc; /* Add border for visibility */
+  border-radius: 8px; /* Rounded corners */
+  padding: 16px; /* Padding inside the card */
+  width: 200px; /* Fixed width */
+  height: auto; /* Adjust height automatically */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 10px; /* Margin around the card */
+}
+
+.card img {
+  max-width: 100%; /* Responsive image */
+  height: auto; /* Keep aspect ratio */
+}
+
+.delete-button {
+  background-color: red; /* Button color */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  padding: 10px 15px; /* Padding inside button */
+  border-radius: 5px; /* Rounded corners for button */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.delete-button:hover {
+  background-color: darkred; /* Darker shade on hover */
+}
